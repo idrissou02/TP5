@@ -1,19 +1,5 @@
 version: "3.8"
 services:
-    # maildev:
-    #     image: maildev/maildev
-    #     container_name: maildev
-    #     command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
-    #     ports:
-    #       - "8081:80"
-    #     restart: always
-    #     networks:
-    #       - dev
-  ###> symfony/mailer ###
-    # mailer:
-    #   image: schickling/mailcatcher
-    #   ports: ["1025", "1080"]
-  ###< symfony/mailer ###
     php:
         build: 
           context: ./docker
@@ -28,4 +14,3 @@ services:
           - dev
 networks:
   dev:
-

@@ -15,8 +15,8 @@ RUN  curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/
 RUN  curl -sS https://get.symfony.com/cli/installer | bash \
     &&  mv /root/.symfony5/bin/symfony /usr/local/bin/symfony 
 
-RUN git config --global user.email "rolland.steph@gmail.com"
-RUN git config --global user.name "rollandsteph"
+RUN git config --global user.email "votremailgitHub"
+RUN git config --global user.name "votrenamegitHub"
 
 
 WORKDIR /var/www/
