@@ -146,12 +146,12 @@ class Contact
         return $this;
     }
 
-    public function getSex(): ?int
+    public function getSexe(): ?int
     {
         return $this->sexe;
     }
 
-    public function setSex(int $sexe): self
+    public function setSexe(int $sexe): self
     {
         $this->sexe = $sexe;
 
